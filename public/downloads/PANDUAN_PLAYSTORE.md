@@ -158,7 +158,7 @@ Google mewajibkan penyediaan akun demo agar penguji dari pihak Google dapat masu
 - **Password:** `demo123`
 - **Instruksi Pengujian:**
   ```text
-  Aplikasi ini menggunakan koneksi ke server Alijaya Billing System. 
+  Aplikasi ini menggunakan koneksi ke server BARCOMNET Billing System. 
   Gunakan username: demo dan password: demo123 untuk menguji portal pelanggan. 
   Koneksi internet aktif diperlukan.
   ```

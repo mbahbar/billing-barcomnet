@@ -486,8 +486,8 @@ async function callOpenAiCompatibleApi({
   }
 
   if (cleanBaseUrl.includes('openrouter.ai')) {
-    headers['HTTP-Referer'] = 'https://barcomnet.id';
-    headers['X-Title'] = 'Alijaya Billing System';
+    headers['HTTP-Referer'] = 'https://barcomnetworks.net';
+    headers['X-Title'] = 'BARCOMNET Billing System';
   }
 
   const response = await axios.post(url, payload, {
