@@ -226,7 +226,7 @@ router.get('/ping', (req, res) => {
     companyPhone: adminPhone,
     adminPhone: adminPhone,
     companyAddress: settings.company_address || '',
-    logoUrl: settings.company_logo || '/img/logo-billing-rtrw.png',
+    logoUrl: settings.company_logo || '/img/logo-barcomnet-billing.png',
     appName: ispName,
     version: '1.2.0',
     timestamp: Date.now()
@@ -248,7 +248,7 @@ router.get('/info', (req, res) => {
       adminPhone: adminPhone,
       companyAddress: settings.company_address || '',
       companyEmail: settings.company_email || '',
-      logoUrl: settings.company_logo || '/img/logo-billing-rtrw.png',
+      logoUrl: settings.company_logo || '/img/logo-barcomnet-billing.png',
       operationalHours: settings.operational_hours || ''
     }
   });
@@ -334,8 +334,8 @@ router.get('/app/version', (req, res) => {
     data: {
       versionCode: vCode,
       versionName: vName,
-      downloadUrl: "/downloads/billing-rtrw.apk",
-      apkFileName: "billing-rtrw.apk",
+      downloadUrl: "/downloads/barcomnet-billing.apk",
+      apkFileName: "barcomnet-billing.apk",
       releaseNotes: notes,
       forceUpdate: Boolean(settings.app_force_update)
     }

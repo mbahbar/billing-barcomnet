@@ -257,7 +257,7 @@ Jika ada masalah dengan RADIUS:
 tail -f logs/error.log
 
 # Restart aplikasi
-pm2 restart billing-rtrw
+pm2 restart barcomnet-billing
 ```
 
 ### **Problem: "Secret tidak terupdate saat edit pelanggan"**

@@ -1042,7 +1042,7 @@ app.post('/api/webhook/v1/payment-notif', multer().any(), async (req, res) => {
   const expectedTrim = typeof serverSecret === 'string' ? serverSecret.trim() : '';
   const gotTrim = String(secret_key || '').trim();
 
-  // Security: Only accept configured secret. Hardcoded fallback 'billing-rtrw-secret-key' is strictly prohibited.
+  // Security: Only accept configured secret. Hardcoded fallback 'barcomnet-billing-secret-key' is strictly prohibited.
   const isSecretValid = expectedTrim.length > 0 && (gotTrim === expectedTrim);
 
   if (!isSecretValid) {
@@ -2138,10 +2138,10 @@ app.get(['/terms-of-service', '/terms', '/tos', '/syarat-ketentuan', '/terms.htm
 });
 
 // Route download APK Android Pelanggan & Admin
-app.get(['/download/app', '/download/apk', '/downloads/billing-rtrw.apk', '/download/billing-rtrw.apk', '/downloads/AlijayaCustomer.apk', '/download/AlijayaCustomer.apk'], (req, res) => {
+app.get(['/download/app', '/download/apk', '/downloads/barcomnet-billing.apk', '/download/barcomnet-billing.apk', '/downloads/AlijayaCustomer.apk', '/download/AlijayaCustomer.apk'], (req, res) => {
   const candidates = [
-    path.join(__dirname, 'public', 'downloads', 'billing-rtrw.apk'),
-    path.join(__dirname, 'billing-rtrw.apk'),
+    path.join(__dirname, 'public', 'downloads', 'barcomnet-billing.apk'),
+    path.join(__dirname, 'barcomnet-billing.apk'),
     path.join(__dirname, 'public', 'downloads', 'AlijayaCustomer.apk'),
     path.join(__dirname, 'AlijayaCustomer.apk')
   ];
@@ -2150,12 +2150,12 @@ app.get(['/download/app', '/download/apk', '/downloads/billing-rtrw.apk', '/down
 
   if (targetPath) {
     res.setHeader('Content-Type', 'application/vnd.android.package-archive');
-    return res.download(targetPath, 'billing-rtrw.apk');
+    return res.download(targetPath, 'barcomnet-billing.apk');
   }
 
   return res.status(404).json({
     success: false,
-    message: 'File APK belum di-upload ke server VPS. Silakan upload file billing-rtrw.apk ke folder public/downloads/ di server.'
+    message: 'File APK belum di-upload ke server VPS. Silakan upload file barcomnet-billing.apk ke folder public/downloads/ di server.'
   });
 });
 

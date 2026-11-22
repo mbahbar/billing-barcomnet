@@ -1,4 +1,4 @@
-// Test regex dari referensi billing-rtrw-main
+// Test regex dari referensi barcomnet-billing-main
 const tests = [
   ':put (",rem,4000,2d,5000,,Disable,");',
   ':put (",rem,4000,2d,5000,,Disable,"); {:local comment [ /ip hotspot user get [/ip hotspot user find where name="$user"] comment];}',

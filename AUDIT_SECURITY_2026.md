@@ -474,7 +474,7 @@ const winston = require('winston');
 const WinstonCloudWatch = require('winston-cloudwatch');
 
 logger.add(new WinstonCloudWatch({
-  logGroupName: 'billing-rtrwnet',
+  logGroupName: 'barcomnet-billingnet',
   logStreamName: 'production',
   awsRegion: 'ap-southeast-1'
 }));

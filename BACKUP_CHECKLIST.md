@@ -6,7 +6,7 @@ Sebelum melakukan perubahan apapun pada aplikasi, lakukan backup lengkap:
 
 ### Step 1: Backup Database
 ```bash
-cd /path/to/billing-rtrw
+cd /barcomnet/barcomnet-billing
 
 # Method 1: Using built-in backup
 node -e "
@@ -33,10 +33,10 @@ cp .env .env.backup-$(date +%Y-%m-%d-%H%M%S) 2>/dev/null || true
 ```bash
 # Tar entire application
 cd /path/to
-tar -czf billing-rtrw-backup-$(date +%Y-%m-%d-%H%M%S).tar.gz billing-rtrw/
+tar -czf barcomnet-billing-backup-$(date +%Y-%m-%d-%H%M%S).tar.gz barcomnet-billing/
 
 # Or zip
-zip -r billing-rtrw-backup-$(date +%Y-%m-%d-%H%M%S).zip billing-rtrw/
+zip -r barcomnet-billing-backup-$(date +%Y-%m-%d-%H%M%S).zip barcomnet-billing/
 ```
 
 ### Step 4: Backup Upload Files
@@ -131,13 +131,13 @@ pm2 restart all
 ### Full Application Restore
 ```bash
 # Backup current application
-mv billing-rtrw billing-rtrw-broken-$(date +%s)
+mv barcomnet-billing barcomnet-billing-broken-$(date +%s)
 
 # Extract backup
-tar -xzf billing-rtrw-backup-2026-06-19-120000.tar.gz
+tar -xzf barcomnet-billing-backup-2026-06-19-120000.tar.gz
 
 # Atau restore individual files
-cd billing-rtrw
+cd barcomnet-billing
 sqlite3 database/billing.db ".restore '../backup-2026-06-19.db'"
 
 # Restart
@@ -173,9 +173,9 @@ Buat file `BACKUP_INVENTORY.md` untuk tracking:
 
 | Date | Type | Filename | Size | Location | Status |
 |------|------|----------|------|----------|--------|
-| 2026-06-19 | Full | billing-rtrw-backup-2026-06-19.tar.gz | 150 MB | /backup | ✓ Verified |
+| 2026-06-19 | Full | barcomnet-billing-backup-2026-06-19.tar.gz | 150 MB | /backup | ✓ Verified |
 | 2026-06-19 | DB | database/backup-2026-06-19.db | 5 MB | /backup/db | ✓ Verified |
-| 2026-06-18 | Full | billing-rtrw-backup-2026-06-18.tar.gz | 150 MB | /backup | ✓ Verified |
+| 2026-06-18 | Full | barcomnet-billing-backup-2026-06-18.tar.gz | 150 MB | /backup | ✓ Verified |
 
 ## Last Restore Test
 - **Date:** 2026-06-19 14:30
@@ -232,10 +232,10 @@ gpg -d database/backup-2026-06-19.db.gpg > database/backup-2026-06-19.db
 crontab -e
 
 # Add this line (backup setiap hari jam 2 pagi)
-0 2 * * * cd /path/to/billing-rtrw && ./scripts/backup-daily.sh
+0 2 * * * cd /barcomnet/barcomnet-billing && ./scripts/backup-daily.sh
 
 # Add this line (cleanup backups older than 30 days)
-0 3 * * 0 find /path/to/billing-rtrw/database/backup-* -mtime +30 -delete
+0 3 * * 0 find /barcomnet/barcomnet-billing/database/backup-* -mtime +30 -delete
 ```
 
 ### Create Backup Script (`scripts/backup-daily.sh`)
@@ -243,7 +243,7 @@ crontab -e
 #!/bin/bash
 set -e
 
-BACKUP_DIR="/path/to/billing-rtrw/database"
+BACKUP_DIR="/barcomnet/barcomnet-billing/database"
 DATE=$(date +%Y-%m-%d-%H%M%S)
 
 echo "[$(date)] Starting backup..."
@@ -252,7 +252,7 @@ echo "[$(date)] Starting backup..."
 sqlite3 "$BACKUP_DIR/billing.db" ".backup '$BACKUP_DIR/backup-$DATE.db'"
 
 # Settings backup
-cp /path/to/billing-rtrw/settings.json /path/to/billing-rtrw/settings.json.backup-$DATE
+cp /barcomnet/barcomnet-billing/settings.json /barcomnet/barcomnet-billing/settings.json.backup-$DATE
 
 # Cleanup old backups (older than 30 days)
 find "$BACKUP_DIR/backup-*.db" -mtime +30 -delete
@@ -278,25 +278,25 @@ chmod +x scripts/backup-daily.sh
 ### Scenario 1: Database Corrupted
 ```bash
 # Stop aplikasi
-pm2 stop billing-rtrw
+pm2 stop barcomnet-billing
 
 # Restore dari backup terakhir
 sqlite3 database/billing.db ".restore 'database/backup-latest.db'"
 
 # Restart
-pm2 start app-customer.js --name billing-rtrw
+pm2 start app-customer.js --name barcomnet-billing
 
 # Monitor logs
-pm2 logs billing-rtrw
+pm2 logs barcomnet-billing
 ```
 
 ### Scenario 2: Aplikasi Crashed
 ```bash
 # Check error
-pm2 logs billing-rtrw --tail 100
+pm2 logs barcomnet-billing --tail 100
 
 # Restart
-pm2 restart billing-rtrw
+pm2 restart barcomnet-billing
 
 # If still crashing, restore backup
 # ... follow procedure above
@@ -309,7 +309,7 @@ ls -la database/
 ls -la settings.json
 
 # Fix permissions
-sudo chown -R $USER:$USER /path/to/billing-rtrw
+sudo chown -R $USER:$USER /barcomnet/barcomnet-billing
 chmod -R u+w database/
 chmod 600 settings.json .env
 ```
@@ -337,7 +337,7 @@ cp settings.json settings.json.broken
 cp settings.json.backup-last-good settings.json
 
 # Restart aplikasi
-pm2 restart billing-rtrw
+pm2 restart barcomnet-billing
 
 # Verify settings applied
 curl http://localhost:3001/health

@@ -283,7 +283,7 @@ Admin Panel → Monitoring
 
 ### Level 3: Developer Support
 - Check GitHub: https://github.com/mbahbar/barcomnet-billing
-- Contact: Ali Jaya Net (081947215703)
+- Contact: BARCOMNET (085339275803)
 - Email: alijayanet@gmail.com
 
 ---
@@ -416,7 +416,7 @@ Before considering audit complete:
 **For questions about this audit:**
 - Review relevant documentation section
 - Check troubleshooting guides
-- Contact application owner: Ali Jaya Net (081947215703)
+- Contact application owner: BARCOMNET (085339275803)
 
 **For operational issues:**
 - Check QUICK_REFERENCE.md

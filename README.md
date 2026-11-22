@@ -148,7 +148,7 @@ Sistem manajemen ISP yang mengintegrasikan **penagihan**, **GenieACS**, **OLT (S
 
 ```bash
 git clone https://github.com/mbahbar/barcomnet-billing.git
-cd billing-rtrw
+cd barcomnet-billing
 cp env-example.txt .env
 npm install
 ```
@@ -177,7 +177,7 @@ Entry point aplikasi adalah **`app-customer.js`** (bukan `app.js`).
 
 ```bash
 npm install pm2 -g
-pm2 start app-customer.js --name billing-rtrw
+pm2 start app-customer.js --name barcomnet-billing
 ```
 
 ---
@@ -224,7 +224,7 @@ Port mengikuti **`server_port`** di `settings.json` (default **3001**). Ganti `[
 | Agen | `http://[IP-SERVER]:3001/agent/login` |
 | Kolektor | `http://[IP-SERVER]:3001/collector/login` |
 | Health check | `http://[IP-SERVER]:3001/health` |
-| **Download APK Android** | `http://[IP-SERVER]:3001/downloads/billing-rtrw.apk` |
+| **Download APK Android** | `http://[IP-SERVER]:3001/downloads/barcomnet-billing.apk` |
 
 Kredensial admin **awal** biasanya sesuai `admin_username` / `admin_password` di `settings.json` (contoh bawaan sering `admin` / `admin123`) — **wajib diganti** sebelum dipakai publik.
 
@@ -238,11 +238,11 @@ Aplikasi Android resmi **Alijaya** adalah aplikasi native multifungsi untuk semu
 1. **Langsung dari Web Server**:
    Akses link berikut melalui browser di smartphone Anda:
    ```text
-   https://app.alijaya.com/downloads/billing-rtrw.apk
+   https://billing.barcomnetworks.net/downloads/barcomnet-billing.apk
    ```
    *(Ganti `[IP-SERVER]` dan `3001` sesuai IP/Domain dan Port server billing Anda)*.
 2. **File Lokal di Repository**:
-   File APK siap install juga tersedia di root proyek: `billing-rtrw.apk` atau `public/downloads/billing-rtrw.apk`.
+   File APK siap install juga tersedia di root proyek: `barcomnet-billing.apk` atau `public/downloads/barcomnet-billing.apk`.
 
 ---
 
@@ -288,7 +288,7 @@ Jika Anda mendapat error ini di server produksi, artinya database belum memiliki
 **Opsi 1: Jalankan Script Fix (Recommended)**
 
 ```bash
-cd /path/to/billing-rtrw
+cd /barcomnet/barcomnet-billing
 bash scripts/fix-database.sh
 ```
 
@@ -310,7 +310,7 @@ npm restart
 **Opsi 3: Manual Verification**
 
 ```bash
-cd /path/to/billing-rtrw
+cd /barcomnet/barcomnet-billing
 node scripts/verify-database.js
 ```
 
@@ -351,8 +351,8 @@ Fork, buat branch fitur, lalu kirim Pull Request.
 **ISC** — lihat berkas `LICENSE`.
 
 Dibuat untuk operasional ISP lokal & RTRW-Net.  
-Managed by [Ali Jaya Net](https://github.com/alijayanet)
+Managed by [BARCOMNET](https://github.com/mbahbar)
 
 ## Info & donasi
 
-081947215703 — https://wa.me/6281947215703
+085339275803 — https://wa.me/6285339275803

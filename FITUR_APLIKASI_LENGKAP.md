@@ -1281,7 +1281,7 @@ Setting di settings.json:
 {
   "whatsapp_enabled": true,
   "whatsapp_auth_folder": "auth_info_baileys",
-  "whatsapp_admin_numbers": ["081947215703", "087820851413"],
+  "whatsapp_admin_numbers": ["085339275803", "087820851413"],
   "company_phone": "6287820851413"
 }
 ```

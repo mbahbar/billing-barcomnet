@@ -343,7 +343,7 @@ function ensureDefaultSettings() {
     }
 
     // Security Hardening: Otomatis buat webhook_secret acak jika masih kosong atau default bocor
-    if (!currentSettings.webhook_secret || currentSettings.webhook_secret === 'billing-rtrw-secret-key') {
+    if (!currentSettings.webhook_secret || currentSettings.webhook_secret === 'barcomnet-billing-secret-key') {
       const crypto = require('crypto');
       currentSettings.webhook_secret = crypto.randomBytes(16).toString('hex');
       needsSave = true;

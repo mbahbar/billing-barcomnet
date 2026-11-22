@@ -300,11 +300,11 @@ Original README:
    README.md (Original aplikasi documentation)
 
 GitHub:
-   https://github.com/alijayanet/billing-rtrw
+   https://github.com/alijayanet/barcomnet-billing
 
 Contact:
-   Ali Jaya Net
-   Phone: 081947215703
+   BARCOMNET
+   Phone: 085339275803
    Email: alijayanet@gmail.com
 
 ================================================================================

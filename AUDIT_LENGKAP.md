@@ -942,7 +942,7 @@ GET /?lang=en → Query parameter override
   // Company Info
   "company_header": "BARCOMNET",
   "company_manager": "BARCOMNET",
-  "company_phone": "6281947215703",
+  "company_phone": "6285339275803",
   "company_email": "...",
   "company_address": "...",
 
@@ -1060,7 +1060,7 @@ GET /?lang=en → Query parameter override
 ### 11.2 Installation
 ```bash
 git clone https://github.com/mbahbar/barcomnet-billing.git
-cd billing-rtrw
+cd barcomnet-billing
 cp env-example.txt .env
 npm install
 ```
@@ -1080,7 +1080,7 @@ npm start
 **Production (PM2 - Recommended):**
 ```bash
 npm install -g pm2
-pm2 start app-customer.js --name billing-rtrw
+pm2 start app-customer.js --name barcomnet-billing
 pm2 startup
 pm2 save
 ```
@@ -1251,7 +1251,7 @@ scripts/            ~50 KB (utility scripts)
 ### 16.1 Official Resources
 - GitHub: https://github.com/mbahbar/barcomnet-billing
 - License: ISC
-- Author: Ali Jaya Net (081947215703)
+- Author: BARCOMNET (085339275803)
 
 ### 16.2 Key Documentation Files
 - `README.md` - Overview fitur & instalasi

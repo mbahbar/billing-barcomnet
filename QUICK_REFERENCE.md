@@ -315,8 +315,8 @@ curl http://localhost:3001/health
 ## 🔗 Important Links
 
 - GitHub: https://github.com/mbahbar/barcomnet-billing
-- Author: Ali Jaya Net
-- Contact: 081947215703
+- Author: BARCOMNET
+- Contact: 085339275803
 - Email: alijayanet@gmail.com
 
 ---

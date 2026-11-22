@@ -725,7 +725,7 @@ Ini super mudah! Follow ini:
    Terminal commands:
    ```
    git clone https://github.com/mbahbar/barcomnet-billing
-   cd billing-rtrw
+   cd barcomnet-billing
    npm install
    npm start
    ```
