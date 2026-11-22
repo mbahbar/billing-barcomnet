@@ -940,8 +940,8 @@ GET /?lang=en → Query parameter override
   "genieacs_rxpower_threshold": -27,
 
   // Company Info
-  "company_header": "ALIJAYA NET",
-  "company_manager": "ALIJAYA NET",
+  "company_header": "BARCOMNET",
+  "company_manager": "BARCOMNET",
   "company_phone": "6281947215703",
   "company_email": "...",
   "company_address": "...",
@@ -1059,7 +1059,7 @@ GET /?lang=en → Query parameter override
 
 ### 11.2 Installation
 ```bash
-git clone https://github.com/alijayanet/billing-rtrw.git
+git clone https://github.com/mbahbar/barcomnet-billing.git
 cd billing-rtrw
 cp env-example.txt .env
 npm install
@@ -1249,7 +1249,7 @@ scripts/            ~50 KB (utility scripts)
 ## 16. DOKUMENTASI & RESOURCES
 
 ### 16.1 Official Resources
-- GitHub: https://github.com/alijayanet/billing-rtrw
+- GitHub: https://github.com/mbahbar/barcomnet-billing
 - License: ISC
 - Author: Ali Jaya Net (081947215703)
 

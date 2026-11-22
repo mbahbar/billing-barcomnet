@@ -4,8 +4,8 @@
 
 Sistem manajemen ISP yang mengintegrasikan **penagihan**, **GenieACS**, **OLT (SNMP)**, **MikroTik** (PPPoE/hotspot/voucher), **peta jaringan (GIS)**, **inventaris**, **WhatsApp/Telegram**, dan **multi-portal** (admin, teknisi, pelanggan, agen) dalam satu platform.
 
-[![GitHub license](https://img.shields.io/github/license/alijayanet/billing-rtrw)](https://github.com/alijayanet/billing-rtrw/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/alijayanet/billing-rtrw)](https://github.com/alijayanet/billing-rtrw/stargazers)
+[![GitHub license](https://img.shields.io/github/license/mbahbar/barcomnet-billing)](https://github.com/mbahbar/barcomnet-billing/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/mbahbar/barcomnet-billing)](https://github.com/mbahbar/barcomnet-billing/stargazers)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org/)
 
 ---
@@ -147,7 +147,7 @@ Sistem manajemen ISP yang mengintegrasikan **penagihan**, **GenieACS**, **OLT (S
 ### Langkah
 
 ```bash
-git clone https://github.com/alijayanet/billing-rtrw.git
+git clone https://github.com/mbahbar/barcomnet-billing.git
 cd billing-rtrw
 cp env-example.txt .env
 npm install

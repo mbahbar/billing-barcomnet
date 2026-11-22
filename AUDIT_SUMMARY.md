@@ -282,7 +282,7 @@ Admin Panel → Monitoring
 - Check database: `node scripts/verify-database.js`
 
 ### Level 3: Developer Support
-- Check GitHub: https://github.com/alijayanet/billing-rtrw
+- Check GitHub: https://github.com/mbahbar/barcomnet-billing
 - Contact: Ali Jaya Net (081947215703)
 - Email: alijayanet@gmail.com
 

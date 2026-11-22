@@ -342,7 +342,7 @@ function formatPaymentSuccessMessage({
     .replace(/{{metode}}/gi, paymentMethod || 'Admin / Kasir')
     .replace(/{{waktu}}/gi, formattedTime)
     .replace(/{{tanggal}}/gi, formattedTime)
-    .replace(/{{company}}/gi, companyName || 'ALIJAYA NET')
+    .replace(/{{company}}/gi, companyName || 'BARCOMNET')
     .replace(/{{company_phone}}/gi, companyPhone || '-')
     .replace(/{{link_portal}}/gi, portalUrl || '-')
     .replace(/{{link}}/gi, portalUrl || '-')

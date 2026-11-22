@@ -486,7 +486,7 @@ async function callOpenAiCompatibleApi({
   }
 
   if (cleanBaseUrl.includes('openrouter.ai')) {
-    headers['HTTP-Referer'] = 'https://alijayanet.net';
+    headers['HTTP-Referer'] = 'https://barcomnet.id';
     headers['X-Title'] = 'Alijaya Billing System';
   }
 

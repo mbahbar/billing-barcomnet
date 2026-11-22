@@ -19,7 +19,7 @@ Kelola SEMUA aspek jaringan Internet Anda dalam satu platform:
 ✅ Agent management
 
 💰 Gratis + Open Source
-🔗 github.com/alijayanet/billing-rtrw
+🔗 github.com/mbahbar/barcomnet-billing
 
 Tertarik? Follow untuk update terbaru! 🔔
 
@@ -66,7 +66,7 @@ Implementasi mudah, hasil maksimal! 🚀
 
 #QRIS #Billing #Fintech #OpenSource
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -114,7 +114,7 @@ Dengan RTRWNET? Santai sambil ngopi ☕
 
 #ISP #Automation #Admin #Efficiency
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -156,7 +156,7 @@ sekarang SIMPLE dan VISUAL! 🎯
 
 #GIS #Network #Mapping #ISP #Technology
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -208,7 +208,7 @@ Sistem billing yang transparan = Customer puas! 😊
 
 #ISP #Billing #Business #Fintech
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -258,7 +258,7 @@ After: Organized ticketing ✨
 
 #Support #CustomerService #ISP #Efficiency
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -311,7 +311,7 @@ Hire 10 agent, semua tercentralisasi di 1 platform 🚀
 
 #Sales #Agent #Reseller #BusinessGrowth
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -374,7 +374,7 @@ RTRWNET punya portal berbeda untuk role berbeda:
 
 #MultiPortal #TeamWork #Efficiency
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -438,7 +438,7 @@ Teknologi jaringan kompleks, interface SIMPLE! 🎯
 
 #Network #MikroTik #ISP #Technology
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -498,7 +498,7 @@ Automation = Personalisasi x Efisiensi 🚀
 
 #WhatsApp #Automation #CRM #Communication
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -570,7 +570,7 @@ CUSTOMER DAPAT PILIHAN = CONVERSION MENINGKAT! 🎯
 
 #Payment #FinTech #Gateway #eCommerce
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ### Visual Suggestion:
@@ -625,7 +625,7 @@ RTRWNET = Gratis + Open Source + Community
 ✅ Multi-router support
 ✅ Payment gateway integration
 
-🔗 GitHub: github.com/alijayanet/billing-rtrw
+🔗 GitHub: github.com/mbahbar/barcomnet-billing
 ⭐ Jangan lupa kasih STAR! 
 
 Ada fitur yang ingin ditambah?
@@ -684,7 +684,7 @@ Kisah nyata implementasi RTRWNET:
    Investment di sistem = ROI berlipat ganda!
 
 Siap transform bisnis ISP Anda?
-Mulai hari ini di github.com/alijayanet/billing-rtrw 🚀
+Mulai hari ini di github.com/mbahbar/barcomnet-billing 🚀
 
 #ISP #BusinessGrowth #CaseStudy #Success
 
@@ -708,7 +708,7 @@ Pengen implement RTRWNET untuk ISP Anda?
 Ini super mudah! Follow ini:
 
 1️⃣ VISIT GITHUB
-   🔗 github.com/alijayanet/billing-rtrw
+   🔗 github.com/mbahbar/barcomnet-billing
    
    Apa yang akan Anda temukan:
    ✅ Source code lengkap
@@ -724,7 +724,7 @@ Ini super mudah! Follow ini:
 3️⃣ INSTALL LOCALLY
    Terminal commands:
    ```
-   git clone https://github.com/alijayanet/billing-rtrw
+   git clone https://github.com/mbahbar/barcomnet-billing
    cd billing-rtrw
    npm install
    npm start
@@ -766,7 +766,7 @@ Ini super mudah! Follow ini:
 JANGAN TUNDA LAGI! 🔥
 Masa depan ISP Anda dimulai hari ini!
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 
 #GetStarted #Tutorial #ISP #TechImplementation
 ```
@@ -820,7 +820,7 @@ Ini perbandingannya:
 YANG DIPILIH YANG CERDAS? 😉
 RTRWNET: Lebih murah + Lebih fleksibel + Lebih powerful
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 
 #ROI #OpenSource #CostEffective #SmartChoice
 
@@ -839,7 +839,7 @@ github.com/alijayanet/billing-rtrw
 ### Option A (Soft):
 ```
 📌 Pertanyaan? Tinggal comment di bawah! 👇
-Atau buka repo di github.com/alijayanet/billing-rtrw
+Atau buka repo di github.com/mbahbar/barcomnet-billing
 
 ⭐ Jangan lupa kasih STAR kalau helpful!
 ```
@@ -848,7 +848,7 @@ Atau buka repo di github.com/alijayanet/billing-rtrw
 ```
 🎯 READY TO TRANSFORM YOUR ISP BUSINESS?
 
-Step 1: github.com/alijayanet/billing-rtrw
+Step 1: github.com/mbahbar/barcomnet-billing
 Step 2: ⭐ Star the repo
 Step 3: Read documentation
 Step 4: Deploy & Grow! 🚀
@@ -1012,7 +1012,7 @@ RTRWNET adalah open source, jadi:
 - ✅ Data: Disimpan di server Anda
 - ✅ Support: Community-driven
 
-Cek di github.com/alijayanet/billing-rtrw
+Cek di github.com/mbahbar/barcomnet-billing
 
 Kalau ada yg susah di-setup, bisa discuss di GitHub issues!
 ```
@@ -1033,7 +1033,7 @@ RTRWNET fokus di:
 
 Perfect untuk yang mau kontrol penuh! 🚀
 
-github.com/alijayanet/billing-rtrw
+github.com/mbahbar/barcomnet-billing
 ```
 
 ---
@@ -1051,4 +1051,4 @@ github.com/alijayanet/billing-rtrw
 ---
 
 **Good luck with your social media campaign! 🚀**
-**Jangan lupa share link GitHub: github.com/alijayanet/billing-rtrw**
+**Jangan lupa share link GitHub: github.com/mbahbar/barcomnet-billing**

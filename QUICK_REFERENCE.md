@@ -314,7 +314,7 @@ curl http://localhost:3001/health
 
 ## 🔗 Important Links
 
-- GitHub: https://github.com/alijayanet/billing-rtrw
+- GitHub: https://github.com/mbahbar/barcomnet-billing
 - Author: Ali Jaya Net
 - Contact: 081947215703
 - Email: alijayanet@gmail.com

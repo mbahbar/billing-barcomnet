@@ -944,7 +944,7 @@ function initTelegram() {
         amount: targetInv.amount,
         paymentMethod: 'Telegram Admin / Kasir',
         paidAt: new Date(),
-        companyName: getSetting('company_header', 'ALIJAYA NET'),
+        companyName: getSetting('company_header', 'BARCOMNET'),
         companyPhone: getSetting('company_phone', ''),
         portalUrl,
         customTemplate: template

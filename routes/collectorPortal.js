@@ -427,7 +427,7 @@ router.post('/payment-request', requireCollectorSession, express.urlencoded({ ex
           amount: inv.amount,
           paymentMethod: collectorLabel || 'Kolektor / Lapangan',
           paidAt: new Date(),
-          companyName: allSettings.company_header || 'ALIJAYA NET',
+          companyName: allSettings.company_header || 'BARCOMNET',
           companyPhone: allSettings.company_phone || '',
           portalUrl,
           customTemplate: template

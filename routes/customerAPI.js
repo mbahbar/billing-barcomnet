@@ -519,7 +519,7 @@ router.post('/app/admin/customers/delete', requireAdminApiAuth, (req, res) => {
 function renderTemplateMessage(template, customer, invoice = null) {
   if (!template) return '';
   const settings = getSettingsWithCache();
-  const comp = settings.company_header || 'ALIJAYA NET';
+  const comp = settings.company_header || 'BARCOMNET';
   const base = settings.public_base_url || settings.app_url || `http://localhost:${settings.port || 3001}`;
   const link = `${base}/customer/login?u=${encodeURIComponent(customer.pppoe_username || customer.phone || '')}`;
 
@@ -674,7 +674,7 @@ router.post('/app/admin/pay-invoice', requireAdminApiAuth, async (req, res) => {
             amount: inv.amount,
             paymentMethod: collectorLabel,
             paidAt: new Date(),
-            companyName: settings.company_header || 'ALIJAYA NET',
+            companyName: settings.company_header || 'BARCOMNET',
             companyPhone: settings.company_phone || '',
             portalUrl,
             customTemplate: template
@@ -948,7 +948,7 @@ router.post('/app/collector/pay-bill', requireCollectorApiAuth, async (req, res)
               amount: inv.amount,
               paymentMethod: collectorLabel,
               paidAt: new Date(),
-              companyName: settings.company_header || 'ALIJAYA NET',
+              companyName: settings.company_header || 'BARCOMNET',
               companyPhone: settings.company_phone || '',
               portalUrl,
               customTemplate: template
@@ -1044,7 +1044,7 @@ router.get('/app/collector/attendance/today', requireCollectorApiAuth, (req, res
   try {
     const attendanceSvc = require('../services/attendanceService');
     const { getSetting } = require('../config/settingsManager');
-    const companyName = getSetting('company_header', 'ALIJAYA NET');
+    const companyName = getSetting('company_header', 'BARCOMNET');
     const collectorId = Number(req.collector?.collectorId || req.collector?.id || 1);
     const collectorName = req.collector?.name || 'Kolektor';
     const today = attendanceSvc.getTodayAttendance('collector', collectorId);
@@ -1179,7 +1179,7 @@ router.get('/app/cashier/attendance/today', requireAdminApiAuth, (req, res) => {
     const history = attendanceSvc.getAttendanceHistory('cashier', cashierId, 10);
 
     const { getSetting } = require('../config/settingsManager');
-    const companyName = getSetting('company_header', 'ALIJAYA NET');
+    const companyName = getSetting('company_header', 'BARCOMNET');
 
     res.json({
       success: true,
@@ -3098,7 +3098,7 @@ router.get('/app/tech/attendance/today', requireTechApiAuth, (req, res) => {
     const techId = resolveTechId(req);
     const attendanceSvc = require('../services/attendanceService');
     const { getSetting } = require('../config/settingsManager');
-    const companyName = getSetting('company_header', 'ALIJAYA NET');
+    const companyName = getSetting('company_header', 'BARCOMNET');
     const today = attendanceSvc.getTodayAttendance('technician', techId);
     res.json({
       success: true,
@@ -3466,7 +3466,7 @@ router.get('/config', (req, res) => {
     success: true,
     data: {
       appName: settings.company_header || 'ISP Billing',
-      companyHeader: settings.company_header || 'ALIJAYA NET',
+      companyHeader: settings.company_header || 'BARCOMNET',
       companyPhone: adminPhone,
       adminPhone: adminPhone,
       companyEmail: settings.company_email || '',
@@ -4445,7 +4445,7 @@ router.post('/agent/pay-invoice', requireAgentApiAuth, express.json(), async (re
             amount: result.invoice.amount,
             paymentMethod: `Agen ${req.agent.name}`,
             paidAt: new Date(),
-            companyName: settings.company_header || 'ALIJAYA NET',
+            companyName: settings.company_header || 'BARCOMNET',
             companyPhone: settings.company_phone || '',
             portalUrl,
             customTemplate: template

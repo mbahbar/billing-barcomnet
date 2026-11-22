@@ -2911,7 +2911,7 @@ router.get('/billing/:id/print', requireAdminSession, (req, res) => {
   res.render('admin/print_invoice', {
     invoice: inv,
     customer,
-    company: settings.company_header || 'ALIJAYA DIGITAL NETWORK',
+    company: settings.company_header || 'BARCOMNET',
     settings
   });
 });
@@ -2927,7 +2927,7 @@ router.get('/billing/:id/print-thermal', requireAdminSession, (req, res) => {
   res.render('collector/print_thermal', {
     invoice: inv,
     customer,
-    company: settings.company_header || 'ALIJAYA DIGITAL NETWORK',
+    company: settings.company_header || 'BARCOMNET',
     settings,
     collectorName: req.session.adminUsername || 'Admin',
     formatDateLocal,
@@ -2979,7 +2979,7 @@ router.post('/billing/:id/send-pdf-wa', requireAdminSession, async (req, res) =>
     const filename = `Invoice_${inv.id}_${safeName}.pdf`;
     const statusText = inv.status === 'paid' ? 'LUNAS' : 'BELUM BAYAR';
     
-    const caption = `📄 *INVOICE PEMBAYARAN INTERNET*\n\nYth. *${customer.name}*,\nBerikut kami lampirkan dokumen resmi Invoice Pembayaran Internet untuk periode *${periodStr}*.\n\n💰 *Total Tagihan:* Rp ${Number(inv.amount || 0).toLocaleString('id-ID')}\n📌 *Status:* *${statusText}*\n\nTerima kasih telah menggunakan layanan *${settings.company_header || 'ALIJAYA NET'}*!`;
+    const caption = `📄 *INVOICE PEMBAYARAN INTERNET*\n\nYth. *${customer.name}*,\nBerikut kami lampirkan dokumen resmi Invoice Pembayaran Internet untuk periode *${periodStr}*.\n\n💰 *Total Tagihan:* Rp ${Number(inv.amount || 0).toLocaleString('id-ID')}\n📌 *Status:* *${statusText}*\n\nTerima kasih telah menggunakan layanan *${settings.company_header || 'BARCOMNET'}*!`;
 
     const { sendWADocument, whatsappStatus } = await import('../services/whatsappBot.mjs');
     if (whatsappStatus.connection !== 'open') {

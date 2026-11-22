@@ -69,7 +69,7 @@ Unduh aplikasi Alijaya Digital sekarang dan nikmati kemudahan mengelola seluruh 
 > `http://<domain-server-anda>/privacy-policy` atau gunakan draf teks resmi di bawah ini:
 
 ```markdown
-# KEBIJAKAN PRIVASI (PRIVACY POLICY) - ALIJAYA DIGITAL
+# KEBIJAKAN PRIVASI (PRIVACY POLICY) - BARCOMNET DIGITAL
 
 Terakhir diperbarui: 30 Agustus 2026
 

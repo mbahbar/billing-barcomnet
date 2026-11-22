@@ -187,7 +187,7 @@ class MorningBriefingService {
     const dateStr = now.toLocaleDateString('id-ID', { timeZone: tz, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
     const timeStr = now.toLocaleTimeString('id-ID', { timeZone: tz, hour: '2-digit', minute: '2-digit' }).replace('.', ':');
 
-    let msg = `☀️ *MORNING EXECUTIVE BRIEFING — ALIJAYA NET*\n`;
+    let msg = `☀️ *MORNING EXECUTIVE BRIEFING — BARCOMNET*\n`;
     msg += `📅 *${dateStr}* | ⏰ *${timeStr} WIB*\n\n`;
 
     // 1. KEUANGAN
