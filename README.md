@@ -1,6 +1,6 @@
 # RTRWNET Management & Billing System
 
-![ISP Management Hero](public/img/hero.png)
+![ISP Management Hero](public/img/barcom-hero.png)
 
 Sistem manajemen ISP yang mengintegrasikan **penagihan**, **GenieACS**, **OLT (SNMP)**, **MikroTik** (PPPoE/hotspot/voucher), **peta jaringan (GIS)**, **inventaris**, **WhatsApp/Telegram**, dan **multi-portal** (admin, teknisi, pelanggan, agen) dalam satu platform.
 
